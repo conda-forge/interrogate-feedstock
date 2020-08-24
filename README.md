@@ -5,7 +5,7 @@ Home: https://interrogate.readthedocs.io
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Interrogate a codebase for docstring coverage.
 
