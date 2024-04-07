@@ -1,5 +1,5 @@
 {% set name = "interrogate" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b6f325f0aa84ac3ac6779d8708264d366102226c5af7d69058cecffcff7a6d6c
+  sha256: 4e8c5de9becb55fbcc549aa3da0200a0b84ed08404562b95397cde7e77de638e
 
 build:
   number: 0
