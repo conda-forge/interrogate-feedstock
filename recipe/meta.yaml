@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: a320d6ec644dfd887cc58247a345054fc4d9f981100c45184470068f4b3719b0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - interrogate = interrogate.cli:main
@@ -19,10 +19,10 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.5
+    - python >={{ python_min }}
     - attrs
     - click
     - colorama
@@ -38,6 +38,7 @@ test:
     - interrogate --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://interrogate.readthedocs.io
