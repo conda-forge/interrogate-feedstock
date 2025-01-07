@@ -29,7 +29,7 @@ requirements:
     - colorama
     - py
     - tabulate
-    - toml
+    - tomli
 
 test:
   imports:
